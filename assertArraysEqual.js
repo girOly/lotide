@@ -11,9 +11,11 @@ const assertEqual = function(actual, expected) {
 
 const eqArrays = function(arrayOne, arrayTwo) {
   for (var i = 0; i <= arrayOne.length; i++) {
-    console.log(arrayOne[i])
-    console.log(arrayTwo[i])
- if (arrayOne[i] !== arrayTwo[i]) {
-      return false
-}} return true
-}
+    console.log(arrayOne[i]);
+    console.log(arrayTwo[i]);
+    if (arrayOne[i] !== arrayTwo[i]) {
+      return false;
+    }
+  }
+  return true;
+};
