@@ -32,22 +32,23 @@ const eqObjects = function(object1, object2) {
       if (Array.isArray(objectListOne[key]) == true) {
         console.log("Loop ending at Line 33");
         return eqArrays(objectListOne, objectListTwo);
-      }else{
+      } else {
         if (objectListOne[key] !== objectListTwo[key]) {
-        console.log("Loop ending at Line 37" + [key]);
-        return false;
-      // } else {
-      //   console.log("Loop ending at line 40");
-      //   return false;
+          console.log("Loop ending at Line 37" + [key]);
+          return false;
+          // } else {
+          //   console.log("Loop ending at line 40");
+          //   return false;
+        }
+        return true;
       }
-      return true
     }
   }
-}}
+};
 // ______________________________________________________________________________
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 console.log(eqObjects(ab, ba)); // => true
 
-const abc = { a: "1", b: "2",};
+const abc = { a: "1", b: "2" };
 console.log(eqObjects(ab, abc)); // => false
