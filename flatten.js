@@ -1,10 +1,10 @@
-const assertEqual = function(actual, expected) {
-  if (eqArrays(actual, expected) == true) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
+//   if (eqArrays(actual, expected) == true) {
+//     console.log(`Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 //
 //
 //
@@ -34,3 +34,5 @@ const flatten = function(arrayThick) {
 flatten([1, 2, 3, [5, 8, 9]]);
 
 console.log(flatArray);
+
+module.exports = flatten;

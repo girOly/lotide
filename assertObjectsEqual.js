@@ -36,3 +36,5 @@ const assertObjectsEqual = function(object1, object2) {
     );
   }
 };
+
+module.exports = assertObjectsEqual;

@@ -10,14 +10,21 @@ const tail = function(element, elementTwo) {
   return elementTwo;
 };
 
+// const tail = function(number) {
+//   let newBucket = [];
+//   for (let i = 0; i < number.length; i++) {
+//     if (i !== 0) {
+//       newBucket.push(number[i]);
+//     }
+//   }
+//   return newBucket;
+// };
+
 // TEST CODE
 
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1,1);
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+
 
 module.exports = tail;
